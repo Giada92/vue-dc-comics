@@ -6,35 +6,8 @@
         </div>
         <nav>
             <ul>
-                <li>
-                    <a href="#" class="active">Characters</a>
-                </li>
-                <li>
-                    <a href="#">Comics</a>
-                </li>
-                <li>
-                    <a href="#">Movies</a>
-                </li>
-                <li>
-                    <a href="#">Tv</a>
-                </li>
-                <li>
-                    <a href="#">Games</a>
-                </li>
-                <li>
-                    <a href="#">Collectibles</a>
-                </li>
-                <li>
-                    <a href="#">Videos</a>
-                </li>
-                <li>
-                    <a href="#">Fans</a>
-                </li>
-                <li>
-                    <a href="#">News</a>
-                </li>
-                <li>
-                    <a href="#">Shop</a>
+                <li v-for="(link, index) in links" :key="index">
+                    <a :href="link.url" :class="{active: link.current}">{{ link.name }}</a>
                 </li>
             </ul>
         </nav>
@@ -44,7 +17,63 @@
 
 <script>
 export default {
-    name: 'MenuLogo'
+    name: 'MenuLogo',
+    data: function() {
+        return {
+            links: [
+                {
+                    name: "Characters",
+                    url: "#Characters",
+                    current: true
+                },
+                {
+                    name: "Comics",
+                    url: "#Comics",
+                    current: false
+                },
+                {
+                    name: "Movies",
+                    url: "#Movies",
+                    current: false
+                },
+                {
+                    name: "Tv",
+                    url: "#Tv",
+                    current: false
+                },
+                {
+                    name: "Games",
+                    url: "#Games",
+                    current: false
+                },
+                {
+                    name: "Collectibles",
+                    url: "#Collectibles",
+                    current: false
+                },
+                {
+                    name: "Videos",
+                    url: "#Videos",
+                    current: false
+                },
+                {
+                    name: "Fans",
+                    url: "#Fans",
+                    current: false
+                },
+                {
+                    name: "News",
+                    url: "#News",
+                    current: false
+                },
+                {
+                    name: "Shop",
+                    url: "#Shop",
+                    current: false
+                }
+            ]
+        }
+    }
 }
 </script>
 
@@ -86,7 +115,7 @@ ul {
             text-transform: uppercase;
             font-size: 13px;
             font-weight: 600;
-            color: black;
+            color: #555051;
             &:hover,
             &.active {
                 color: #0282F9;
@@ -94,4 +123,5 @@ ul {
         }
     }
 }
+
 </style>

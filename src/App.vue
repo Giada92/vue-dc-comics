@@ -1,20 +1,26 @@
 <template>
   <div id="app">
-    <!-- Intestazione -->
+    <!-- Intestazione - Logo - Barra di navigazione -->
     <MenuLogo />
-    <!-- /Intestazione -->
+    <!-- Intestazione - Logo - Barra di navigazione -->
+
+    <!-- Main -->
+    <WorldDc />
+    <!-- Main -->
 
   </div>
 </template>
 
 <script>
 import MenuLogo from './components/MenuLogo.vue';
+import WorldDc from './components/WorldDc.vue';
 
 
 export default {
   name: 'App',
   components: {
-    MenuLogo
+    MenuLogo,
+    WorldDc
   }
 }
 </script>
