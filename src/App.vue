@@ -12,6 +12,10 @@
     <Footer />
     <!-- Footer -->
 
+    <!-- Barra social -->
+    <Social />
+    <!-- Barra social -->
+
   </div>
 </template>
 
@@ -19,6 +23,7 @@
 import MenuLogo from './components/MenuLogo.vue';
 import WorldDc from './components/WorldDc.vue';
 import Footer from './components/Footer.vue';
+import Social from './components/Social.vue';
 
 
 export default {
@@ -26,7 +31,8 @@ export default {
   components: {
     MenuLogo,
     WorldDc,
-    Footer
+    Footer,
+    Social
   }
 }
 </script>

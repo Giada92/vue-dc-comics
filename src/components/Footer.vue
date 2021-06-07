@@ -61,12 +61,15 @@ export default {
 
 <style lang="scss" scoped>
 footer {
-    height: 350px;
+    height: 300px;
     background-image: url('../assets/img/footer-bg.jpg');
+    background-size: contain;
+    background-position: 0 -75px;
+    background-attachment: fixed;
 }
 
 .wrapp_footer {
-    height: 350px;
+    height: 300px;
     display: flex;
 }
 
@@ -74,7 +77,7 @@ footer {
     display: flex;
     width: 40%;
     height: 100%;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .link {
@@ -92,7 +95,8 @@ ul {
     li {
         padding: 2px;
         font-size: 12px;
-        color: #6B848C;
+        color: #6B6160;
+        cursor: pointer;
     }
 }
 

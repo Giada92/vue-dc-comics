@@ -6,7 +6,7 @@
         </div>
         <nav>
             <ul>
-                <li v-for="(link, index) in links" :key="index">
+                <li v-for="(link, index) in links" :class="{active: link.current}" :key="index">
                     <a :href="link.url" :class="{active: link.current}">{{ link.name }}</a>
                 </li>
             </ul>
@@ -105,7 +105,8 @@ ul {
     li {
         list-style: none;
         margin: 0 10px;
-        &:hover {
+        &:hover,
+        &.active {
             border-bottom: 5px solid #0282F9;
         }
 
