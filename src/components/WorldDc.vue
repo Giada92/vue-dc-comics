@@ -15,7 +15,7 @@ export default {
 <style lang="scss" scoped>
 main {
     width: 100%;
-    height: 150px;
+    height: 500px;
     line-height: 150px; /* da modificare */
     background-color: black;
 }

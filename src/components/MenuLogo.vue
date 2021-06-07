@@ -80,7 +80,6 @@ export default {
 <style lang="scss" scoped>
 header {
     height: 100px;
-    background-color: palegreen;
 }
 
 .cols {

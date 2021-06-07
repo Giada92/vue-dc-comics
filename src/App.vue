@@ -8,19 +8,25 @@
     <WorldDc />
     <!-- Main -->
 
+    <!-- Footer -->
+    <Footer />
+    <!-- Footer -->
+
   </div>
 </template>
 
 <script>
 import MenuLogo from './components/MenuLogo.vue';
 import WorldDc from './components/WorldDc.vue';
+import Footer from './components/Footer.vue';
 
 
 export default {
   name: 'App',
   components: {
     MenuLogo,
-    WorldDc
+    WorldDc,
+    Footer
   }
 }
 </script>
@@ -36,7 +42,7 @@ body {
 }
 
 #container {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 
