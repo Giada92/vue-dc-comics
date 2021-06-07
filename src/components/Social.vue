@@ -23,6 +23,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+//importo il nome del file dove ho salvato la variabile con lo stile
+@import "../style/variabile.scss";
+
 section{
     width: 100%;
     height: 100px;
@@ -57,12 +60,12 @@ span {
 }
 
 .blue {
-    color: #0282F9;
+    color: $mainColor;
 }
 
 .button {
     padding: 12px;
-    border: 2px solid #0282F9;
+    border: 2px solid $mainColor;
     color: white;
 }
 </style>

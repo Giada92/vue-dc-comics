@@ -2,11 +2,15 @@
   <div id="app">
     <!-- Intestazione - Logo - Barra di navigazione -->
     <MenuLogo />
-    <!-- Intestazione - Logo - Barra di navigazione -->
+    <!-- /Intestazione - Logo - Barra di navigazione -->
 
     <!-- Main -->
     <WorldDc />
-    <!-- Main -->
+    <!-- /Main -->
+
+    <!-- Shop -->
+    <ShopBanner />
+    <!-- /Shop -->
 
     <!-- Footer -->
     <Footer />
@@ -14,7 +18,7 @@
 
     <!-- Barra social -->
     <Social />
-    <!-- Barra social -->
+    <!-- /Barra social -->
 
   </div>
 </template>
@@ -22,6 +26,7 @@
 <script>
 import MenuLogo from './components/MenuLogo.vue';
 import WorldDc from './components/WorldDc.vue';
+import ShopBanner from './components/ShopBanner.vue';
 import Footer from './components/Footer.vue';
 import Social from './components/Social.vue';
 
@@ -31,6 +36,7 @@ export default {
   components: {
     MenuLogo,
     WorldDc,
+    ShopBanner,
     Footer,
     Social
   }
@@ -38,18 +44,7 @@ export default {
 </script>
 
 <style lang="scss">
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-body {
-  font-family: 'Roboto', sans-serif;
-}
 
-#container {
-  width: 70%;
-  margin: 0 auto;
-}
+@import "./style/general.scss";
 
 </style>

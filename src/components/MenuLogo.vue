@@ -78,6 +78,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../style/variabile.scss";
+
 header {
     height: 100px;
 }
@@ -107,7 +109,7 @@ ul {
         margin: 0 10px;
         &:hover,
         &.active {
-            border-bottom: 5px solid #0282F9;
+            border-bottom: 5px solid $mainColor;
         }
 
         a {
@@ -118,7 +120,7 @@ ul {
             color: #555051;
             &:hover,
             &.active {
-                color: #0282F9;
+                color: $mainColor;
             }
         }
     }
