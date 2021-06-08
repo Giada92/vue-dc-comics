@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <!-- Intestazione - Logo - Barra di navigazione -->
-    <MenuLogo />
+    <MenuLogo :links="menu" />
     <!-- /Intestazione - Logo - Barra di navigazione -->
 
     <!-- Main -->
@@ -18,7 +18,7 @@
     <!-- Footer -->
     <footer>
       <!-- Footer Top -->
-      <FooterTop />
+      <FooterTop :esempio="menu"/>
       <!-- /Footer Top -->
 
       <!-- Barra social -->
@@ -48,6 +48,62 @@ export default {
     FooterTop,
     Social,
     Jumbotron
+  },
+  data: function(){
+    return {
+     menu: [
+            {
+                name: "Characters",
+                url: "#Characters",
+                current: false
+            },
+            {
+                name: "Comics",
+                url: "#Comics",
+                current: false
+            },
+            {
+                name: "Movies",
+                url: "#Movies",
+                current: false
+            },
+            {
+                name: "Tv",
+                url: "#Tv",
+                current: false
+            },
+            {
+                name: "Games",
+                url: "#Games",
+                current: false
+            },
+            {
+                name: "Collectibles",
+                url: "#Collectibles",
+                current: false
+            },
+            {
+                name: "Videos",
+                url: "#Videos",
+                current: false
+            },
+            {
+                name: "Fans",
+                url: "#Fans",
+                current: false
+            },
+            {
+                name: "News",
+                url: "#News",
+                current: false
+            },
+            {
+                name: "Shop",
+                url: "#Shop",
+                current: false
+            }
+        ],
+    }
   }
 }
 </script>

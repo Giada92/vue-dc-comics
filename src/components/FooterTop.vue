@@ -38,12 +38,17 @@
                 <div class="link">
                     <h4>Sites</h4>
                     <ul>
+                        <li v-for="element, index in esempio" :key="index">
+                            <a href="#">{{element.name}}</a>
+                        </li>
+                    </ul>
+                    <!-- <ul>
                         <li><a href="#">DC</a></li>
                         <li><a href="#">MAD Magazine</a></li>
                         <li><a href="#">DC Kids</a></li>
                         <li><a href="#">DC Universe</a></li>
                         <li><a href="#">DC Power Visa</a></li>
-                    </ul>
+                    </ul> -->
                 </div>
             </div>
             <div class="logo_footer"></div>
@@ -53,7 +58,10 @@
 
 <script>
 export default {
-    name: "Footer"
+    name: "Footer",
+    props: {
+        esempio: Array
+    }
 }
 </script>
 
