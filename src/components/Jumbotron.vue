@@ -1,6 +1,6 @@
 <template>
-  <div class="wrappwr_bg">
-      <img src="" alt="Personaggi DC">
+  <div class="wrapper_bg">
+      <!-- <img src="../assets/img/jumbotron.jpg" alt="Personaggi DC"> -->
   </div>
 </template>
 
@@ -11,5 +11,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.wrapper_bg {
+    width: 100%;
+    height: 400px;
+    background-image: url("../assets/img/jumbotron.jpg");
+    background-position-x: center;
+}
 </style>

@@ -26,7 +26,7 @@ export default {
                 {
                     name: "Characters",
                     url: "#Characters",
-                    current: false
+                    current: true
                 },
                 {
                     name: "Comics",
