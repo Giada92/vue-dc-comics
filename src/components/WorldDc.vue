@@ -7,12 +7,16 @@
                 v-for="comic, index in comics" :key="index"
                 :fumetti="comic"/>
             </div>
+            <div class="load">
+                <span>Load More</span>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
 import Card from './Card.vue';
+
 export default {
     name: "WorldDc",
     components: {
@@ -101,10 +105,10 @@ export default {
 
 <style lang="scss" scoped>
 @import "../style/variabile.scss";
+@import "../style/mixins.scss";
 
 .wrapper {
     width: 100%;
-    height: 600px;
     position: relative;
     display: flex;
     align-items: center;
@@ -118,14 +122,26 @@ h2 {
     display: inline-block;
     padding: 12px;
     background-color: $mainColor;
-    color: white;
+    color: $lightColor;
+    text-transform: uppercase;
 }
 
 .cards {
     width: 100%;
-    height: 500px;
+    margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
 }
 
+.load{
+    width: 100%;
+    margin: 20px 0;
+
+    span {
+        display: inline-block;
+        padding: 12px 40px;
+        text-transform: uppercase;
+        @include my_button;
+}
+}
 </style>

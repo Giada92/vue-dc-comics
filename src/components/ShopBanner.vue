@@ -61,17 +61,17 @@ section {
                 margin-left: 10px;
                 font-size: 14px;
                 text-transform: uppercase;
-                color: white;
+                color: $lightColor;
             }
 
             &:last-child img {
                 width: 50px;
             }
-    }
-}
 
-.wrapper_shop:hover {
-    cursor: pointer;
+            &:hover {
+                cursor: pointer;
+            }
+    }
 }
 
 </style>

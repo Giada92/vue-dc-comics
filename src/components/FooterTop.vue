@@ -5,44 +5,44 @@
                 <div class="link">
                     <h4>Dc Comics</h4>
                     <ul>
-                        <li>Characters</li>
-                        <li>Comics</li>
-                        <li>Movies</li>
-                        <li>TV</li>
-                        <li>Games</li>
-                        <li>Videos</li>
-                        <li>News</li>
+                        <li><a href="#">Characters</a></li>
+                        <li><a href="#">Comics</a></li>
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="#">TV</a></li>
+                        <li><a href="#">Games</a></li>
+                        <li><a href="#">ideos</a></li>
+                        <li><a href="#">Comics</a></li>
                     </ul>
                     <h4>Shop</h4>
                     <ul>
-                        <li>Shop DC</li>
-                        <li>Shop DC Collectibles</li>
+                        <li><a href="#">Shop DC</a></li>
+                        <li><a href="#">Shop DC Collectibles</a></li>
                     </ul>
                 </div>
                 <div class="link">
                     <h4>Dc</h4>
                     <ul>
-                        <li>Terms of Use</li>
-                        <li>privacy policy (New)</li>
-                        <li>Ad Choices</li>
-                        <li>Advertising</li>
-                        <li>Jobs</li>
-                        <li>Subscriptions</li>
-                        <li>Talent Workshops</li>
-                        <li>CPSC Certificates</li>
-                        <li>Ratings</li>
-                        <li>Shop Hepl</li>
-                        <li>Contact Us</li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy policy (New)</a></li>
+                        <li><a href="#">Ad Choices</a></li>
+                        <li><a href="#">Advertising</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Subscriptions</a></li>
+                        <li><a href="#">Talent Workshops</a></li>
+                        <li><a href="#">CPSC Certificates</a></li>
+                        <li><a href="#">Ratings</a></li>
+                        <li><a href="#">Shop Hepl</a></li>
+                        <li><a href="#">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="link">
                     <h4>Sites</h4>
                     <ul>
-                        <li>DC</li>
-                        <li>MAD Magazine</li>
-                        <li>DC Kids</li>
-                        <li>DC Universe</li>
-                        <li>DC Power Visa</li>
+                        <li><a href="#">DC</a></li>
+                        <li><a href="#">MAD Magazine</a></li>
+                        <li><a href="#">DC Kids</a></li>
+                        <li><a href="#">DC Universe</a></li>
+                        <li><a href="#">DC Power Visa</a></li>
                     </ul>
                 </div>
             </div>
@@ -86,20 +86,22 @@ export default {
 h4 {
     text-transform: uppercase;
     margin: 10px 0;
-    color: white;
+    color: $lightColor;
 }
 
 ul {
     list-style: none;
     li {
-        padding: 2px;
-        font-size: 12px;
-        color: #6B6160;
-        cursor: pointer;
-        
-        &:hover {
-            color: $mainColor;
+            a{
+                font-size: 13px;
+                cursor: pointer;
+                text-decoration: none;
+                color: #6B6160;
+                &:hover {
+                color: $mainColor;
+            }
         }
+        
     }
 }
 

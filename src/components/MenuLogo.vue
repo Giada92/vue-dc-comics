@@ -6,9 +6,9 @@
         </div>
         <nav>
             <ul>
-                <li v-for="(link, index) in links" :class="{active: link.current}" :key="index">
-                    <a :href="link.url" :class="{active: link.current}"
-                    @click="goToNavBar(index)">{{ link.name }}</a>
+                <li v-for="(link, index) in links"  :key="index"
+                @click="changeNavStatus(index)" :class="{active: index==activeIndex}">
+                    <a :href="link.url" :class="{active: index==activeIndex}">{{ link.name }}</a>
                 </li>
             </ul>
         </nav>
@@ -19,14 +19,13 @@
 <script>
 export default {
     name: 'MenuLogo',
-    activeIndex: 0,
     data: function() {
         return {
             links: [
                 {
                     name: "Characters",
                     url: "#Characters",
-                    current: true
+                    current: false
                 },
                 {
                     name: "Comics",
@@ -73,13 +72,13 @@ export default {
                     url: "#Shop",
                     current: false
                 }
-            ]
+            ],
+            activeIndex: 0,
         }
     },
     methods: {
-        goToNavBar: function(newIndex){
-            this.activeIndex = newIndex;
-            console.log(this.activeIndex);
+        changeNavStatus: function(index){
+            return (this.activeIndex = index);
         }
     }
 }

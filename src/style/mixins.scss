@@ -1,0 +1,9 @@
+@mixin my_button {
+    border: 2px solid $mainColor;
+        color: $lightColor;
+        transition: all 1s;
+        &:hover {
+            cursor: pointer;
+            background-color: $mainColor;
+        }
+}

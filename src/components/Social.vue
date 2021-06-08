@@ -1,6 +1,6 @@
 <template>
   <section>
-      <div class="container">
+      <div class="container social">
           <div class="sing">
               <span class="button">Sign-Up Now!</span>
           </div>
@@ -25,6 +25,7 @@ export default {
 <style lang="scss" scoped>
 //importo il nome del file dove ho salvato la variabile con lo stile
 @import "../style/variabile.scss";
+@import "../style/mixins.scss";
 
 section{
     width: 100%;
@@ -32,7 +33,7 @@ section{
     background-color: #303030;
 }
 
-.container {
+.social {
     display: flex;
     height: 100%;
 }
@@ -69,13 +70,7 @@ span {
 
 .button {
     padding: 12px;
-    border: 2px solid $mainColor;
-    color: white;
-    transition: all 1s;
-    &:hover {
-        cursor: pointer;
-        background-color: $mainColor;
-    }
+    @include my_button;
 }
 
 </style>

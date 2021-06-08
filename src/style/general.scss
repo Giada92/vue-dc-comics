@@ -1,12 +1,13 @@
+@import "../style/variabile.scss";
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
   body {
-    font-family: 'Roboto', sans-serif;
-  }
-  
+    font-family: $mainFontText;
+  }  
   .container {
     width: 70%;
     margin: 0 auto;

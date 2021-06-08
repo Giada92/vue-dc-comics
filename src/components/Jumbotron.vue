@@ -1,7 +1,5 @@
 <template>
-  <div class="wrapper_bg">
-      <!-- <img src="../assets/img/jumbotron.jpg" alt="Personaggi DC"> -->
-  </div>
+  <div class="wrapper_bg"></div>
 </template>
 
 <script>
