@@ -5,7 +5,10 @@
     <!-- /Intestazione - Logo - Barra di navigazione -->
 
     <!-- Main -->
-    <WorldDc />
+    <main>
+      <Jumbotron />
+      <WorldDc />
+    </main>
     <!-- /Main -->
 
     <!-- Shop -->
@@ -13,21 +16,26 @@
     <!-- /Shop -->
 
     <!-- Footer -->
-    <Footer />
-    <!-- Footer -->
+    <footer>
+      <!-- Footer Top -->
+      <FooterTop />
+      <!-- /Footer Top -->
 
-    <!-- Barra social -->
-    <Social />
-    <!-- /Barra social -->
+      <!-- Barra social -->
+      <Social />
+      <!-- /Barra social -->
+    </footer>
+    <!-- Footer -->
 
   </div>
 </template>
 
 <script>
 import MenuLogo from './components/MenuLogo.vue';
+import Jumbotron from './components/Jumbotron.vue';
 import WorldDc from './components/WorldDc.vue';
 import ShopBanner from './components/ShopBanner.vue';
-import Footer from './components/Footer.vue';
+import FooterTop from './components/FooterTop.vue';
 import Social from './components/Social.vue';
 
 
@@ -37,8 +45,9 @@ export default {
     MenuLogo,
     WorldDc,
     ShopBanner,
-    Footer,
-    Social
+    FooterTop,
+    Social,
+    Jumbotron
   }
 }
 </script>

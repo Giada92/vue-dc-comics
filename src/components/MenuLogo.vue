@@ -1,13 +1,14 @@
 <template>
   <header>
-      <div id="container" class="cols">
+      <div class="container cols">
         <div id="logo">
             <img src="../assets/img/dc-logo.png" alt="Logo DC">
         </div>
         <nav>
             <ul>
                 <li v-for="(link, index) in links" :class="{active: link.current}" :key="index">
-                    <a :href="link.url" :class="{active: link.current}">{{ link.name }}</a>
+                    <a :href="link.url" :class="{active: link.current}"
+                    @click="goToNavBar(index)">{{ link.name }}</a>
                 </li>
             </ul>
         </nav>
@@ -18,13 +19,14 @@
 <script>
 export default {
     name: 'MenuLogo',
+    activeIndex: 0,
     data: function() {
         return {
             links: [
                 {
                     name: "Characters",
                     url: "#Characters",
-                    current: true
+                    current: false
                 },
                 {
                     name: "Comics",
@@ -73,6 +75,12 @@ export default {
                 }
             ]
         }
+    },
+    methods: {
+        goToNavBar: function(newIndex){
+            this.activeIndex = newIndex;
+            console.log(this.activeIndex);
+        }
     }
 }
 </script>
@@ -94,6 +102,7 @@ header {
 #logo{
     width: 30%;
     height: 100%;
+    cursor: pointer;
 
     img {
         height: 80%;

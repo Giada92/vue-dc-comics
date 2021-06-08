@@ -1,6 +1,6 @@
 <template>
   <section>
-        <div id="container">
+        <div class="container">
             <div class="shop">
                 <div class="wrapper_shop">
                     <img src="../assets/img/buy-comics-digital-comics.png" alt="Icona Pad">
@@ -19,7 +19,7 @@
                     <span>Comic shop locator</span>
                 </div>
                 <div class="wrapper_shop">
-                    <img src="../assets/img/buy-dc-power-visa.svg" alt="Icona carta di credito">
+                    <img class="last_img" src="../assets/img/buy-dc-power-visa.svg" alt="Icona carta di credito">
                     <span>Dc Power Visa</span>
                 </div>
             </div>
@@ -63,7 +63,15 @@ section {
                 text-transform: uppercase;
                 color: white;
             }
+
+            &:last-child img {
+                width: 50px;
+            }
     }
+}
+
+.wrapper_shop:hover {
+    cursor: pointer;
 }
 
 </style>

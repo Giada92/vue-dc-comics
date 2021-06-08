@@ -1,9 +1,9 @@
 <template>
-  <main>
-      <div id="container">
-          <h1>Content goes here</h1>
-      </div>
-  </main>
+    <div class="wrapper">
+        <div class="container">
+            <h1>Content goes here</h1>
+        </div>
+    </div>
 </template>
 
 <script>
@@ -13,16 +13,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-main {
+.wrapper {
     width: 100%;
     height: 500px;
-    line-height: 150px; /* da modificare */
     background-color: black;
 }
 
 h1 {
     color: white;
-    vertical-align: middle; /* da modificare */
 }
 
 </style>

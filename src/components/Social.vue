@@ -1,6 +1,6 @@
 <template>
   <section>
-      <div id="container">
+      <div class="container">
           <div class="sing">
               <span class="button">Sign-Up Now!</span>
           </div>
@@ -32,7 +32,7 @@ section{
     background-color: #303030;
 }
 
-#container {
+.container {
     display: flex;
     height: 100%;
 }
@@ -52,6 +52,10 @@ section{
 img {
     padding: 0 10px;
     cursor: pointer;
+    transition: all 1s;
+    &:hover{
+        opacity: 0.5;
+    }
 }
 
 span {
@@ -67,5 +71,11 @@ span {
     padding: 12px;
     border: 2px solid $mainColor;
     color: white;
+    transition: all 1s;
+    &:hover {
+        cursor: pointer;
+        background-color: $mainColor;
+    }
 }
+
 </style>
